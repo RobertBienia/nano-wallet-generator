@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nano currency wallet generator (Raiblocks XRB)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<link rel="icon" href="favicon.png" type="image/x-icon">
+<meta name="description" content="Create your NANO Address, Online Wallet Generator Raiblocks, XRB">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="css/design.css"/>
+<script type="text/javascript" src="nacl.js"></script>
+<script type="text/javascript" src="blake2b.js"></script>
+<script type="text/javascript" src="functions.js"></script>
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div class="aa">
+<div id="header">
+<div class="image"><a href="/" alt="nano wallet"><img src="logo.png"></a></div>
+<div class="center">
+<h2>Get Open Source Wallets</h2>
+<h1>Open Source NANO Currency (XRB) wallet generator</h1>
+</div></div>
+
+<div class="info">
+This site is <strong>Open Source</strong> and runs on just Javascript and HTML. You can Download the entire code on my <a href="" rel="nofollow" target="_blank">GitHub</a> and run it on your computer!.
+</div>
+
+
+<div id="createwallet" class="showopt">
+<span id="seedimport"><h2>New NANO Seed Created!</h2></span>
+<div class="dontcopy">Copy this and... DONT SHARE WITH ANY OTHER. SAVE IT IN A SAFE PLACES.</div>
+<div id="newseed"></div>
+<div class="textcenter">After you write this seed in another place.</div>
+</div>
+
+<div id="importseed" class="showopt">
+<span id="seedimport"><h2>New NANO Seed Created!</h2></span>
+<span id="toolimport">Wallet NANO (XRB) for Cold storage.</span>
+<table style="border-collapse:collapse;">
+<tr>
+<td style="width:150px;">
+<span id="selectwallet">Select Wallet number:</span><br />
+<select name="wallet" id="walletpath" style="width:150px;">
+<option value="0" selected="selected">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select>
+</td>
+<td>
+Seed 64 character hexadecimal string.
+<div style="position:relative;">
+<button class="button_seed" id="randomSeed">GENERATE SEED</button>
+<input style="text-indent:300px" type="text" id="seed" placeholder="Generate SEED" />
+<button class="button_generate" id="generatePair">GENERATE ADDRESS</button></div>
+
+</td>
+</tr>
+</table>
+<table>
+<thead>
+<tr>
+<td style="width:33%;">Wallet Seed:</td>
+<td style="width:33%;">Account Key</td>
+<td style="width:33%;">Address:</td>
+</tr>
+</thead>
+<tbody id="pairs"></tbody>
+</table>
+
+</div>
+
+<div class="adv">
+<strong>Caution:</strong> Do not forget to copy your SEED
+</div>
+
+</div>
+
+<div id="endweb">
+
+<div style="width:calc(33% - 40px);margin:10px 0;display:inline-block;padding:5px 10px;vertical-align:top;"><h3><u>About me:</u></h3>My nickname is Robert Bienia, an "enthusiasm developer of Open Source Website Proyects and really interested in the Blockchain Technology". My projects are created without any type of profit, so if you want help me you can Donate to: <strong>xrb_1wyegpsxhjjxrojjp7ytr7g5u6jdbszosqjadtb33rge98feizk57crrs5u1</strong></div>
+
+
+</div>
+<script type="text/javascript" src="wallet.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+</body>
+</html>
